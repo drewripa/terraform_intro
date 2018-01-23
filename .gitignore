@@ -1,2 +1,4 @@
 awscred.tf
 .terraform
+*.tfstate
+*.tfstate.*
