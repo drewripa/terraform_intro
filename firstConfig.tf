@@ -8,3 +8,7 @@ resource "aws_instance" "firstConfig" {
   ami           = "ami-3cf36145"
   instance_type = "t2.micro"
 }
+
+resource "aws_eip" "ip" {
+  instance = "${aws_instance.firstConfig.id}"
+}
