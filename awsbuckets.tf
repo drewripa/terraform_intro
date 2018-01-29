@@ -5,9 +5,9 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "vmtpublic" {
-    bucket    = "VidmindTest_public_bucket"
+    bucket    = "vidmind_test_public_bucket"
     acl       = "public-read"
-    
+
     tags {
        Name         = "Vidmind Test Public Bucket"
        Environment  = "Production"
